@@ -1,0 +1,12 @@
+const PLAYERS = [
+ {name:"Ege",profile:"Oyunun kurucusu. Kuralları sorgular ama masadaki kaosu da sever. Gecenin gidişatını kontrol etmeyi sever; fakat işler kontrolden çıktığında genellikle en önde o vardır.",tags:["Kurucu","Strateji","Kaos"],photo:"photos/ege.jpg"},
+ {name:"Buse",profile:"Sakin görünür; doğru anda yaptığı hamleyle bütün masayı değiştirebilir. İnsanları iyi okur ve masadaki küçük detayları kaçırmaz. Gerektiğinde oyunun en beklenmedik hamlesini yapar.",tags:["Taktik","Soğukkanlı","Sürpriz"],photo:"photos/buse.jpg"},
+ {name:"Eren",profile:"Her turun bir şekilde merkezine düşen, enerjisi yüksek oyuncu. Masadaki sessizliği bozmakta ve oyunun temposunu yükseltmekte üzerine yoktur.",tags:["Enerji","Mizah","Kaos"],photo:"photos/eren.jpg"},
+ {name:"Çağdaş",profile:"Kuralları kendi lehine çevirmek için fırsat kollayan oyuncu. Bir görevin ucundan yakaladığı anda onu masanın tamamına yaymayı başarabilir.",tags:["Taktik","Kurnaz","Rekabet"],photo:"photos/cagdas.jpg"},
+ {name:"Orçun",profile:"Masayı izler, doğru anda tek cümleyle bütün dengeleri bozar. Çok konuşmadan oyunun gidişatını değiştirebilen oyunculardan.",tags:["Gözlemci","Laf sokar","Sürpriz"],photo:"photos/orcun.jpg"},
+ {name:"Sergen",profile:"Oyunun temposunu yükseltmek için her fırsatı değerlendiren oyuncu. Beklemektense aksiyon almayı ve masayı hareketlendirmeyi tercih eder.",tags:["Hızlı","Cesur","Kaos"],photo:"photos/sergen.jpg"},
+ {name:"Defne",profile:"Kuralları hızlı kavrar ve gerektiğinde oyunu kendi tarafına çeker. Sessizce plan yapıp doğru anda uygulamayı sever.",tags:["Zeki","Taktik","Soğukkanlı"],photo:"photos/defne.jpg"},
+ {name:"Ahmet",profile:"Sessiz başlayan ama tur ilerledikçe etkisi artan oyuncu. Masanın bütün dinamiklerini gözlemleyip en doğru anda oyuna dahil olur.",tags:["Gizemli","Sabırlı","Sürpriz"],photo:"photos/ahmet.jpg"},
+ {name:"Atahan",profile:"Bir sonraki görevin ne olacağını tahmin etmeye çalışan stratejist. Şansın yanında olduğunu düşündüğü anda oyunun kontrolünü eline almaya çalışır.",tags:["Strateji","Rekabet","Analiz"],photo:"photos/atahan.jpg"},
+ {name:"İsmail",profile:"Oyunun en beklenmedik anında ortaya çıkan joker. Ne yapacağını tahmin etmek zordur; bu da onu masanın en eğlenceli oyuncularından biri yapar.",tags:["Joker","Komik","Kaos"],photo:"photos/ismail.jpg"}
+];

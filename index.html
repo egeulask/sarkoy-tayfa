@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#050505"><title>YAZLIK — Gece Oyunu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="introScreen" class="intro-screen">
+  <div class="bar-scene">
+    <div class="table-glow"></div>
+    <div class="real-bottle bottle-a"><span></span></div><div class="real-bottle bottle-b"><span></span></div>
+    <div class="real-glass glass-a"></div><div class="real-glass glass-b"></div>
+  </div>
+  <div class="intro-vignette"></div>
+  <div class="intro-content">
+    <span class="intro-overline">ŞARKÖY GENÇLERİNE · ÖZEL OYUN</span>
+    <div class="intro-logo">Y</div><h1>YAZLIK</h1>
+    <div class="intro-line"></div><p>Bu gece kimse masum değil.</p>
+    <button id="enterBtn" class="intro-btn">ŞAMATA BAŞLASIN GENÇLER <b>→</b></button>
+  </div>
+  <small class="intro-warning">22+ · Sorumlu tüketmeyin · Her görev sike sike yapılacak</small>
+</div>
+
+<div class="ambient ambient-1"></div><div class="ambient ambient-2"></div>
+<main id="app" class="app app-hidden">
+<header class="topbar"><div class="logo"><span class="logo-mark">Y</span><div><strong>YAZLIK</strong><small>GECE OYUNU</small></div></div><div class="top-actions"><button id="statsBtn" class="icon-btn">◈</button><button id="rulesBtn" class="icon-btn">☰</button></div></header>
+
+<section id="homeScreen" class="screen active">
+<div class="hero"><span class="eyebrow">BU GECEKİ KADRO</span><h1>Masaya<br><em>kim oturuyor?</em></h1><p>Bir oyuncunun kartına dokun tüm profilini incele lan.GELSİN BAKALIM GENCOLARI SEÇ.</p></div>
+<div class="card player-card"><div class="card-title"><div><span class="mini-label">ADIM 01</span><h2>Oyuncuları seç</h2></div><span class="count" id="selectedCount">0</span></div>
+<div id="playersGrid" class="players-grid"></div><button id="startBtn" class="primary-btn" disabled><span>OYUNU BAŞLAT</span><span>→</span></button></div>
+<p class="disclaimer">Bir görevi istemiyorsan pas GEÇEMEZSİN. Oyun eğlence içindir; O YUÜZDEN İCMEK ZORUNDASIN.</p>
+</section>
+
+<section id="gameScreen" class="screen">
+<div class="game-header"><button id="backBtn" class="ghost-btn">← Oyuncular</button><div class="round">TUR <span id="roundNumber">1</span></div></div>
+<div class="turn-info"><span>ŞİMDİ SIRA</span><button id="currentPlayerBtn" class="current-player-btn">—</button></div>
+<div class="number-stage"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div><div class="number-card" id="numberCard"><span class="number-label">ŞANS NUMARAN</span><strong id="number">?</strong><small>00 — 19</small></div></div>
+<div class="result-card"><div class="result-number" id="resultNumber">—</div><div><span class="result-label">GÖREV</span><h2 id="resultTitle">Sayı çekmeye hazır mısın?</h2><p id="resultText">Butona bas ve gecenin ne getireceğini gör.</p></div></div>
+<div id="specialCard" class="special-card hidden"></div><button id="drawBtn" class="primary-btn draw-btn"><span>SAYI ÇEK</span><span>🎲</span></button><div class="next-player" id="nextPlayer"></div>
+</section>
+
+<section id="statsScreen" class="screen"><button id="statsBackBtn" class="ghost-btn">← Geri</button><div class="section-heading"><span class="eyebrow">GECE RAPORU</span><h1>Masadaki<br><em>istatistikler.</em></h1></div><div id="statsContent" class="stats-list"></div><button id="finishBtn" class="secondary-btn">GECEYİ BİTİR</button></section>
+</main>
+
+<div id="rulesModal" class="modal hidden"><div class="modal-backdrop"></div><div class="modal-card"><button id="closeRules" class="close-btn">×</button><span class="mini-label">OYUN KURALLARI</span><h2>20 görev</h2><div id="rulesList"></div></div></div>
+<div id="profileModal" class="modal hidden"><div class="modal-backdrop"></div><div class="modal-card profile-modal"><button id="closeProfile" class="close-btn">×</button><div id="modalProfileContent"></div></div></div>
+<div id="finalModal" class="modal hidden"><div class="modal-backdrop"></div><div class="modal-card final-modal"><span class="mini-label">GECE RAPORU</span><h2>Bu gece böyle geçti.</h2><div id="finalContent"></div><button id="closeFinal" class="primary-btn"><span>YENİ OYUN</span><span>↻</span></button></div></div>
+<script src="players.js"></script><script src="rules.js"></script><script src="app.js"></script>
+</body></html>

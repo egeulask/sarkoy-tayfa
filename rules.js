@@ -1,0 +1,22 @@
+const RULES = [
+{title:"İstediğine shot attır",text:"Bir oyuncu seç. O kişi isterse bir yudum veya shot alır."},
+{title:"Erkekler içer",text:"Masadaki erkek oyuncular içeceklerinden bir yudum alır."},
+{title:"Kızlar içer",text:"Masadaki kadın oyuncular içeceklerinden bir yudum alır."},
+{title:"Kural koy",text:"Bir sonraki tur sonuna kadar geçerli olacak yeni bir kural belirle."},
+{title:"Ben hiç...",text:"\"Ben hiç...\" diye başlayan bir cümle kur. Bunu yapanlar bir yudum alır."},
+{title:"İstediğine içir",text:"Bir oyuncu seç ve ona bir yudum içme görevi ver."},
+{title:"Kendin iç",text:"Bu turun görevi sensin. Bir yudum al."},
+{title:"Kelime treni",text:"Bir kategori seç. Sırayla o kategoriden kelime söyleyin. Takılan turu kaybeder."},
+{title:"Parmak koyma",text:"İstediğin anda masaya parmağını koy. En son fark eden kişi bir yudum alır."},
+{title:"PAS",text:"Bu turu pas geçtin. Görev yok."},
+{title:"Herkes içer",text:"Masadaki herkes, istemeyenler hariç, içeceklerinden bir yudum alır."},
+{title:"Doğru / yanlış",text:"Bir oyuncuya doğru/yanlış sorusu sor. Yanlış cevap veya süre aşımı bir yudum."},
+{title:"Cevap veriyorum",text:"Masadan biri sana soru sorar. Cevaplamak istemezsen pas geçebilirsin."},
+{title:"Diktatör",text:"Bir sonraki tur boyunca oyunun mini kuralını sen belirlersin."},
+{title:"Hafıza testi",text:"Herkes önceki oyuncuların söylediği kelimeleri sırayla tekrar eder. Unutan turu kaybeder."},
+{title:"İsim yasağı",text:"Bir sonraki tur boyunca seçtiğin bir oyuncunun adını söylemek yasak. Söyleyen bir yudum alır."},
+{title:"Taklit zamanı",text:"Masadan birini seç ve 10 saniye boyunca onun bir hareketini veya tavrını taklit et."},
+{title:"Hızlı soru",text:"Sağındaki kişiye 3 saniye içinde cevaplaması gereken bir soru sor. Süreyi aşarsa bir yudum."},
+{title:"El kaldır",text:"Bir elini havaya kaldır. Son kaldıran kişi bir yudum alır."},
+{title:"Seçim hakkı",text:"Bu turda kimin görev yapacağını seçebilirsin. Seçtiğin kişi görevi kabul etmek zorunda değildir."}
+];
